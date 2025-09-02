@@ -1,16 +1,13 @@
 # MERN Stack CI/CD Application
 
-[![CI/CD Pipeline](https://github.com/yourusername/mern-cicd-app/workflows/MERN%20Stack%20CI/CD/badge.svg)](https://github.com/yourusername/mern-cicd-app/actions)
+[![CI/CD Pipeline](https://github.com/ManuJB023/mern-cicd-app/workflows/MERN%20Stack%20CI/CD/badge.svg)](https://github.com/ManuJB023/mern-cicd-app/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Node.js Version](https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen)](https://nodejs.org/)
 [![React Version](https://img.shields.io/badge/react-%5E18.0.0-blue)](https://reactjs.org/)
 
-A full-stack MERN (MongoDB, Express.js, React, Node.js) application with automated CI/CD pipeline, featuring user authentication, task management, and AWS deployment.
+A full-stack MERN (MongoDB, Express.js, React, Node.js) application with automated CI/CD pipeline, featuring user authentication, task management, and AWS deployment capabilities.
 
-## 🌟 Live Demo
-
-- **Frontend**: [Live Application](http://mern-app-1755211827.s3-website-us-east-1.amazonaws.com)
-- **API Health**: [Backend Status](http://54.84.22.104:5000/api/health)
+> **Note**: This is a portfolio/demonstration project. Live demo instances have been taken down to manage costs, but the application can be deployed locally or to your own cloud infrastructure using the provided configuration.
 
 ## 📋 Table of Contents
 
@@ -51,7 +48,7 @@ A full-stack MERN (MongoDB, Express.js, React, Node.js) application with automat
 
 ### 🚀 DevOps & Deployment
 - **Automated CI/CD pipeline** with GitHub Actions
-- **AWS deployment** (EC2 + S3)
+- **AWS deployment configuration** (EC2 + S3)
 - **Docker support** for containerization
 - **Environment-based configuration**
 - **Health checks** and monitoring
@@ -76,8 +73,8 @@ A full-stack MERN (MongoDB, Express.js, React, Node.js) application with automat
 ### DevOps & Tools
 - **GitHub Actions** - CI/CD pipeline
 - **PM2** - Process management
-- **AWS EC2** - Backend hosting
-- **AWS S3** - Frontend hosting
+- **AWS EC2** - Backend hosting capability
+- **AWS S3** - Frontend hosting capability
 - **Docker** - Containerization
 - **ESLint** - Code linting
 
@@ -115,7 +112,7 @@ A full-stack MERN (MongoDB, Express.js, React, Node.js) application with automat
 ### Clone and Install
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/mern-cicd-app.git
+git clone https://github.com/ManuJB023/mern-cicd-app.git
 cd mern-cicd-app
 
 # Install all dependencies
@@ -132,7 +129,7 @@ npm run dev
 The application will be available at:
 - **Frontend**: http://localhost:3000
 - **Backend**: http://localhost:5000
-- **API Docs**: http://localhost:5000/api
+- **API Health**: http://localhost:5000/api/health
 
 ## 📦 Installation
 
@@ -293,7 +290,7 @@ npm run install-all
 npm run dev
 ```
 
-### Production Deployment
+### Production Deployment Options
 
 #### Docker Deployment
 ```bash
@@ -306,13 +303,15 @@ docker build -t mern-frontend ./client
 ```
 
 #### AWS Deployment
-```bash
-# Deploy backend to EC2
-# Deploy frontend to S3
-# Configure CloudFront (optional)
+The project includes configuration for AWS deployment:
+- Backend deployment to EC2 with PM2 process management
+- Frontend build deployment to S3 with static website hosting
+- CI/CD pipeline for automated deployments
 
-# See deployment guide in docs/deployment.md
-```
+See deployment configuration files:
+- `.github/workflows/deploy.yml` - GitHub Actions workflow
+- `docker-compose.yml` - Container orchestration
+- `server/ecosystem.config.js` - PM2 configuration
 
 #### Manual Deployment
 ```bash
@@ -359,7 +358,7 @@ on:
     branches: [ master ]
 ```
 
-### Required Secrets
+### Required Secrets (for deployment)
 Set these in GitHub repository settings:
 - `MONGODB_URI` - Database connection string
 - `JWT_SECRET` - JWT signing secret
@@ -455,19 +454,18 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 If you have any questions or need help with setup, please:
 
-1. Check the [Issues](https://github.com/yourusername/mern-cicd-app/issues) page
+1. Check the [Issues](https://github.com/ManuJB023/mern-cicd-app/issues) page
 2. Read the [Documentation](docs/)
 3. Create a new issue if needed
 
-## 🔗 Links
+## 📗 Links
 
-- [Live Demo](http://mern-app-1755211827.s3-website-us-east-1.amazonaws.com)
-- [API Documentation](https://documenter.getpostman.com/view/your-collection)
+- [GitHub Repository](https://github.com/ManuJB023/mern-cicd-app)
+- [Architecture Documentation](docs/architecture.md)
 - [Deployment Guide](docs/deployment.md)
-- [Architecture Guide](docs/architecture.md)
 
 ---
 
-**Made with ❤️ by [Your Name](https://github.com/yourusername)**
+**Portfolio project demonstrating full-stack development with modern DevOps practices**
 
 ⭐ Star this repository if you found it helpful!
