@@ -464,7 +464,7 @@ If you have any questions or need help with setup, please:
 - [Architecture Documentation](docs/architecture.md)
 - [Deployment Guide](docs/deployment.md)
 
----
+----
 
 **Portfolio project demonstrating full-stack development with modern DevOps practices**
 
