@@ -163,6 +163,22 @@ jobs:
         echo "Version: ${{ github.sha }}"
         echo "Time: $(date)"
 
+  # Docker Image Build
+  docker-build:
+    name: Docker Build
+    runs-on: ubuntu-latest
+    needs: [ci]
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: Build Server Docker Image
+      run: docker build -t mern-server:${{ github.sha }} .
+
+    - name: List Docker Images
+      run: docker images
+      
   # Cleanup
   cleanup:
     name: Cleanup

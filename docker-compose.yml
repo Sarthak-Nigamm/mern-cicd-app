@@ -8,7 +8,7 @@ services:
     environment:
       - NODE_ENV=development
       - MONGODB_URI=mongodb://mongo:27017/mernapp
-      - JWT_SECRET=your-jwt-secret
+      - JWT_SECRET=aee6054923b2464aeedf6bbf43ba9128e46219c5edb7a8eb223f951aba9f060a
     depends_on:
       - mongo
     volumes:
