@@ -469,3 +469,5 @@ If you have any questions or need help with setup, please:
 **Portfolio project demonstrating full-stack development with modern DevOps practices**
 
 ⭐ Star this repository if you found it helpful!"demo" 
+d e m o  
+ 
